@@ -1,4 +1,8 @@
 package com.example;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,10 +10,13 @@ import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import static org.mockito.Mockito.when;
 
+=======
+>>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest extends TestCase {
     private final String expected = "Кошачьи";
@@ -21,10 +28,15 @@ public class FelineTest extends TestCase {
 
     @Test
     public void testEatMeat() throws Exception {
+<<<<<<< HEAD
         List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         when(feline.getFood("Хищник")).thenReturn(expectedFood);
         List<String> actualFood = feline.eatMeat();
         assertEquals(expectedFood, actualFood);
+=======
+        feline.eatMeat();
+        Mockito.verify(feline, Mockito.times(1)).getFood("Хищник");
+>>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
     }
 
     @Test

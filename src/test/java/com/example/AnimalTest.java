@@ -3,9 +3,12 @@ package com.example;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
+<<<<<<< HEAD
 
 import java.util.List;
 
+=======
+>>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -37,9 +40,12 @@ public class AnimalTest extends TestCase {
         assertEquals("Ответ не соответствует ожидаемому",
                 FAMILY, actual);
     }
+<<<<<<< HEAD
 
     @Test
     public void testGetFood() throws Exception {
         assertEquals(List.of("Трава", "Различные растения"), animal.getFood("Травоядное"));
     }
+=======
+>>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
 }
