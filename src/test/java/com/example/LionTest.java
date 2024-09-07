@@ -7,17 +7,12 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
-<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.junit.Assert.assertThrows;
-=======
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
->>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest extends TestCase {
@@ -30,17 +25,10 @@ public class LionTest extends TestCase {
 
     @Test
     public void testGetKittens() throws Exception {
-<<<<<<< HEAD
         Lion lion = new Lion("Самец", feline);
         int expectedValue = 1;
         Mockito.when(feline.getKittens()).thenReturn(expectedValue);
         assertEquals(expectedValue, lion.getKittens());
-=======
-        lion = new Lion(MALE, feline);
-
-        lion.getKittens();
-        Mockito.verify(feline).getKittens();
->>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
     }
 
     @Test
@@ -54,7 +42,6 @@ public class LionTest extends TestCase {
     }
 
     @Test
-<<<<<<< HEAD
     public void testLionConstructorWithFemale() {
         boolean expectedresultOfMane = false;
         try {
@@ -77,12 +64,5 @@ public class LionTest extends TestCase {
         List<String> expectedtValue = Arrays.asList("Животные", "Птицы", "Рыба");
         Mockito.when(feline.getFood("Хищник")).thenReturn(expectedtValue);
         assertEquals(expectedtValue, lion.getFood());
-=======
-    public void testGetFood() throws Exception {
-        lion = new Lion(MALE, feline);
-
-        lion.getFood();
-        Mockito.verify(feline).getFood(Mockito.anyString());
->>>>>>> 08fc0ead5074d9a989adf1374352fa32d5c0f961
     }
 }
